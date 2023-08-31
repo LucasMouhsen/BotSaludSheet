@@ -1,0 +1,7 @@
+bot_sessions
+node_modules
+baileys.log
+/core.class.log
+package-lock.json
+credentials.json
+.env

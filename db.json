@@ -1,0 +1,19 @@
+[
+  {
+    "ref": "ans_b9558ddd-d274-4f17-a9c9-3a4a23b8c19f",
+    "keyword": "key_5b997fef-b1ad-42bc-8413-febaea5faf34",
+    "answer": "Muchas gracias por responder",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": true,
+      "child": null,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "149d746a49335f6d6a83d07c0de830c3",
+    "from": "5491131890767"
+  }
+]
