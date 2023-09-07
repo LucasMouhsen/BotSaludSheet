@@ -7,11 +7,12 @@ const { executeQuery } = require('./middleware/db')
 const { updateCancelValueForCode } = require('./google/sheets')
 
 
-const inputFlow1 = ['1', 'uno', 'confirmo','confirmar', 'si']
-const inputFlow2 = ['2', 'dos', 'cancelo','cancelar', 'no']
+const inputFlow1 = ['1', 'uno', 'confirmo', 'confirmar']
+const inputFlow2 = ['2', 'dos', 'cancelo', 'cancelar']
 const inputFlow3 = ['info', 'informacion', 'imfo', 'imformacion']
 const combinedArray = inputFlow1.concat(inputFlow2);
 
+const fs = require('fs');
 /* const flowInfo3 = addKeyword(inputFlow3)
     .addAnswer(
         [
@@ -34,18 +35,45 @@ const flowInfo1 = addKeyword(combinedArray)
             'Muchas gracias por responder',
         ],
         null,
-        async(ctx, { fallBack, flowDynamic }) => {
+        async (ctx, { fallBack, flowDynamic }) => {
             if (inputFlow1.some(item => ctx.body.includes(item))) {
                 /* aplica en google Sheets */
-                await updateCancelValueForCode('123456','1')
-                return flowDynamic(['Gracias por confirmar su turno'])
-                /* return flowDynamic([
-                    '👋 Hola Vecino de San Miguel!\n\n📞 *Seleccione una opción:* 📞\n\n*1* Confirmar turno 📅\n*2* Cancelar turno ❌\n*3* Informacion sobre un turno ℹ️',
-                ]); */
-            } else if (inputFlow2.some(item => ctx.body.includes(item))){
-                await updateCancelValueForCode('123456','2')
-                return flowDynamic(['Turno cancelado'])
-
+                fs.readFile('dbPy.json', 'utf8', async (err, data) => {
+                    if (err) {
+                        console.error('Error al leer el archivo:', err);
+                        return;
+                    }
+                    const registros = JSON.parse(data)
+                    
+                    for (let i = registros.length - 1; i >= 0; i--) {
+                        console.log(registros[i].from === ctx.from);
+                        if (registros[i].from == ctx.from) {
+                            await updateCancelValueForCode(registros[i].turnCodigo, '1')
+                            return flowDynamic(['Gracias por confirmar su turno'])
+                        }
+                      }
+                })
+                
+            } else if (inputFlow2.some(item => ctx.body.includes(item))) {
+                fs.readFile('dbPy.json', 'utf8', async (err, data) => {
+                    if (err) {
+                        console.error('Error al leer el archivo:', err);
+                        return;
+                    }
+                    const registros = JSON.parse(data)
+                    
+                    for (let i = registros.length - 1; i >= 0; i--) {
+                        console.log(registros[i].from === ctx.from);
+                        if (registros[i].from == ctx.from) {
+                            await updateCancelValueForCode(registros[i].turnCodigo, '2')
+                            return flowDynamic(['Turno cancelado'])
+                        }
+                      }
+                })
+            } else {
+                var inputFlowC1 = inputFlow1.join(', ');
+                var inputFlowC2 = inputFlow2.join(', ');
+                return flowDynamic(['Debes responder con:\n\n('+inputFlowC1+ ') Para confirmar\n('+ inputFlowC2+ ') Para cancelar'])
             }
         }
     )

@@ -12,8 +12,8 @@ async function updateCancelValueForCode(codeToSearch, newCancelValue) {
   const values = response.data.values;
 
   // Recorrer todos los registros y actualizar celda "CANCELAR" si el código coincide
-  for (let i = 1; i < values.length; i++) { // Comenzar en 1 para omitir la fila de encabezados
-    if (values[i][6] === codeToSearch) { // Comprobar el código en la columna "NÚMERO DE CONTACTO"
+  for (let i = values.length - 1; i >= 0; i--) { // Comenzar en 1 para omitir la fila de encabezados
+    if (+values[i][6] === +codeToSearch) { // Comprobar el código en la columna "NÚMERO DE CONTACTO"
       values[i][9] = newCancelValue; // Actualizar celda "CANCELAR" (índice 9)
     }
   }
@@ -29,6 +29,8 @@ async function updateCancelValueForCode(codeToSearch, newCancelValue) {
     },
   });
 }
+
+
 
 
 module.exports = { updateCancelValueForCode}

@@ -1,19 +1,76 @@
 [
   {
-    "ref": "ans_b9558ddd-d274-4f17-a9c9-3a4a23b8c19f",
-    "keyword": "key_5b997fef-b1ad-42bc-8413-febaea5faf34",
+    "ref": "6c75a44f-4021-444d-a162-98933d279849",
+    "keyword": "699e1b862efae649733c60168f11a457",
+    "answer": "hola",
+    "options": {},
+    "from": "5491131890767",
+    "refSerialize": "79e7fc16f7fb85373fd25a99390f44c0"
+  },
+  {
+    "ref": "ans_02c90dff-18ff-41df-a70a-0d49b03331be",
+    "keyword": "key_43bb7126-bb2b-49e5-8b68-078c22598995",
     "answer": "Muchas gracias por responder",
     "options": {
       "media": null,
       "buttons": [],
-      "capture": true,
+      "capture": false,
       "child": null,
       "delay": 0,
       "nested": [],
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "149d746a49335f6d6a83d07c0de830c3",
+    "refSerialize": "0af0d2873d9e1da46b06e1773214b687",
     "from": "5491131890767"
+  },
+  {
+    "ref": "6c76f027-6da8-4e46-9ef0-238978ac1f8b",
+    "answer": "Debes responder con:\n\n(1, uno, confirmo, confirmar) Para confirmar\n(2, dos, cancelo, cancelar) Para cancelar",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "5491131890767",
+    "refSerialize": "13d6bd1dae262c675ae029edf43ba447"
+  },
+  {
+    "ref": "434a7c4a-ab41-4214-ab10-9fb86f5c4e15",
+    "keyword": "0af0d2873d9e1da46b06e1773214b687",
+    "answer": "1",
+    "options": {},
+    "from": "5491131890767",
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+  },
+  {
+    "ref": "ans_02c90dff-18ff-41df-a70a-0d49b03331be",
+    "keyword": "key_43bb7126-bb2b-49e5-8b68-078c22598995",
+    "answer": "Muchas gracias por responder",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "0af0d2873d9e1da46b06e1773214b687",
+    "from": "5491131890767"
+  },
+  {
+    "ref": "835bdba2-da6c-4c6b-92a6-4fa9e96a3b62",
+    "answer": "Gracias por confirmar su turno",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "5491131890767",
+    "refSerialize": "653f65ed58d25e7f446b920e5c30bbb2"
   }
 ]

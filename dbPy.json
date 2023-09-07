@@ -1,0 +1,32 @@
+[
+  {
+    "ref": "Mouhsen, Lucas",
+    "keyword": "18/09/2023 13:20",
+    "answer": "Hola buenos dias Mouhsen, Lucas, nos contactamos de la Secretaria de Salud de la Municipalidad de San Miguel, para confirmar su asistencia al turno otorgado para CONSULTA NEUROLOGIA, el dia 18/09/2023 13:20hs en HOSPITAL OFTALMOLOGICO - ODONTOLOGICO CENTRAL DE SAN MIGUEL, AV. PTE. PERON ESQ. ALBERDI 0.\n\nEn el caso de no poder asistir al turno asignado, recuerda cancelarlo para que pueda estar a disposicion de otro paciente. Entre todos podemos mejorar el sistema de salud.\n\nPresione 1 para CONFIRMAR.\nPresione 2 para CANCELAR.\n\nEs importante contar con tu respuesta.\nMuchas gracias.",
+    "options": {},
+    "from": "5491131890767",
+    "refSerialize": "CONSULTA NEUROLOGIA",
+    "turnCodigo": "112772872",
+    "envio": "10:53"
+  },
+  {
+    "ref": "Herrero, Agustin",
+    "keyword": "18/09/2023 13:20",
+    "answer": "Hola buenos dias Herrero, Agustin, nos contactamos de la Secretaria de Salud de la Municipalidad de San Miguel, para confirmar su asistencia al turno otorgado para CONSULTA DIABETOLOGICA, el dia 18/09/2023 13:20hs en HOSPITAL OFTALMOLOGICO - ODONTOLOGICO CENTRAL DE SAN MIGUEL, AV. PTE. PERON ESQ. ALBERDI 0.\n\nEn el caso de no poder asistir al turno asignado, recuerda cancelarlo para que pueda estar a disposicion de otro paciente. Entre todos podemos mejorar el sistema de salud.\n\nPresione 1 para CONFIRMAR.\nPresione 2 para CANCELAR.\n\nEs importante contar con tu respuesta.\nMuchas gracias.",
+    "options": {},
+    "from": "5491124044834",
+    "refSerialize": "CONSULTA DIABETOLOGICA",
+    "turnCodigo": "118039845",
+    "envio": "10:53"
+  },
+  {
+    "ref": "Cuneo, Florencia",
+    "keyword": "18/09/2023 13:20",
+    "answer": "Hola buenos dias Cuneo, Florencia, nos contactamos de la Secretaria de Salud de la Municipalidad de San Miguel, para confirmar su asistencia al turno otorgado para CONSULTA GASTROENTEROLOGIA, el dia 18/09/2023 13:20hs en HOSPITAL OFTALMOLOGICO - ODONTOLOGICO CENTRAL DE SAN MIGUEL, AV. PTE. PERON ESQ. ALBERDI 0.\n\nEn el caso de no poder asistir al turno asignado, recuerda cancelarlo para que pueda estar a disposicion de otro paciente. Entre todos podemos mejorar el sistema de salud.\n\nPresione 1 para CONFIRMAR.\nPresione 2 para CANCELAR.\n\nEs importante contar con tu respuesta.\nMuchas gracias.",
+    "options": {},
+    "from": "5491132470886",
+    "refSerialize": "CONSULTA GASTROENTEROLOGIA",
+    "turnCodigo": "129296216",
+    "envio": "10:53"
+  }
+]
